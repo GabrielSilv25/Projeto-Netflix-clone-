@@ -1,0 +1,154 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+    --branco: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*dará exatamente o tamanh que definiu os counteúdos*/
+}
+
+/*cabeçalho*/
+
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+header nav i{
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav i:hover{/*o que acontecerá se o cursor ficar em cima*/
+    color: #ffff;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{/*o que acontecerá se o cursor ficar em cima*/
+    color: #ffff;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('img/sombra-ossos.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;/*só tirar qualquer coisa*/
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titulo{
+    margin-top: 40%;
+    margin-left: 5px;
+    font-family: 'EB Garamond', 'Noto Serif',  'Crimson Text';
+    font-size: 40px;
+    font-style: italic;
+}
+
+.filme-principal .descricao{
+    font-size: 13.2px;
+    font-family: arial;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.botao{
+    font-size: 16px;
+    font-family: 'Abel', 'Hind', verdana;
+    background-color: rgba(0,0,0,.50);
+    border: rgba(43, 43, 43, 0.801) solid 1px;
+    border-radius: 7%;
+    color: #aaa;
+    padding: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 15px;
+    margin-right: -10px;
+    cursor: pointer;
+    transition: 2s ease all;/*responsável no transito de animações*/
+}
+
+.b2{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.botao:hover{
+    color: black;
+    border: var(--branco) solid 1px;
+    background-color: var(--branco);
+}
+
+.botao i{
+    margin-right: 3.5px;
+    cursor: pointer;
+}
+
+.container{
+    margin-left: 10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+main .filme-principal{
+    margin-bottom: 50px;
+}
+
+.subtitulo{
+    width: 100%;
+    padding-left: 5px;
+    margin-bottom: 2px;
+    color: rgb(221, 221, 221);
+}
+
+.item{
+    cursor: pointer;
+    border: #000000 solid 1px;
+}
+
+.rodape{
+    color: #aaa;
+    padding-right: 5px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 10px;
+    background-color: #000000;
+    width: 100%;
+    height: 25px;
+}
